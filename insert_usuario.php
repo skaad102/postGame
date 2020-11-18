@@ -45,13 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $pass = EncryClave($pass);
 
-    $Selecuser = $Con->prepare('SELECT * FROM usuario WHERE $user =  ?');
+    $Selecuser = $Con->prepare('SELECT * FROM usuario WHERE user =  ?');
     $Selecuser->execute(array($user));
 
     if ($Selecuser->fetchColumn() > 0) {
         echo alerta('ya esxixte este usuario', 'nuevo.php');
     } else {
-        $inserUser = $Con->prepare('INSERT INTO (`Id_user`, `nickname_user`, `nombre_user`, `correo_user`, `pass_user`, `avatar_user`) usuario VALUES(DEFAULT, :nickname_user, :nombre_user, :correo_user, :pass_user, :avatar_user)');
+        $inserUser = $Con->prepare('INSERT INTO usuario (Id_user, nickname_user, nombre_user, correo_user, pass_user, avatar_user)  VALUES (DEFAULT, :nickname_user, :nombre_user, :correo_user, :pass_user, :avatar_user)');
         $inserUser->bindparam(':nickname_user', $user);
         $inserUser->bindparam(':nombre_user', $nombre);
         $inserUser->bindparam(':correo_user', $email);

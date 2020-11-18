@@ -85,4 +85,4 @@ include './assets/include/header.php'
     </div>
 
 
-    <?php include './assets/include/footer.php';
+    <?php include './assets/include/footer_user.php';

@@ -1,5 +1,3 @@
-
-
 <footer class="footer" data-background-color="black">
       <div class=" container ">
         <nav>
@@ -26,7 +24,7 @@
           <script>
             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
           </script>, Diseñado por
-          <a href="#" target="_blank">Temgic</a>. Coded by
+          <a href="#" target="_blank">Temgic</a>
         </div>
       </div>
     </footer>
@@ -47,21 +45,7 @@
   <script src="./assets/js/now-ui-kit.js?v=1.3.0" type="text/javascript"></script>
 
   <script src="./assets/js/app.js"></script>
-  <script>
-    $(document).ready(function() {
-      // the body of this function is in assets/js/now-ui-kit.js
-      nowuiKit.initSliders();
-    });
 
-    function scrollToDownload() {
-
-      if ($('.section-download').length != 0) {
-        $("html, body").animate({
-          scrollTop: $('.section-download').offset().top
-        }, 1000);
-      }
-    }
-  </script>
 </body>
 
 </html>

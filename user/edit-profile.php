@@ -115,7 +115,7 @@ include '../assets/include/all-src.php';
             type: "POST",
             success: function(data) {
                 alert('Actualizacion Exitosa')
-                location.reload()
+                location.assign('profile-page.php')
             },
             error: function() {}
         });
