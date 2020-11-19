@@ -1,14 +1,10 @@
 <?php
-include '../assets/include/header_user.php';
-include '../conexion/conection.php';
 include '../assets/include/all-src.php';
+include '../conexion/conection.php';
 include '../assets/include/navbar.php';
 
 ?>
-<!--      <header>
-     <h3 class='text-center'></h3>
-     </header>    --> 
-      
+
     <div class="container mt-4 mb-2"> </div> <br>
     <div class="container mt-5">
         <div class="row">
