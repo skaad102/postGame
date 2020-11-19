@@ -23,6 +23,7 @@ function comprobarUsuario() {
 }
 
 $(document).ready(function() {
+
     var juego_id, opcion;
     opcion = 4;
         

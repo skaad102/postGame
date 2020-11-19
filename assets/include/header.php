@@ -5,8 +5,13 @@
 
 <head>
   <meta charset="utf-8" />
+<<<<<<< HEAD
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+=======
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+>>>>>>> 02ca42b4c5ac93ce37c3fdd3b17bafb1065db6f0
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Now Play
