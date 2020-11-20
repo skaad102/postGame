@@ -1,7 +1,7 @@
 <?php
-include '../assets/include/all-src.php';
+include '../assets/include/includeCrud.php';
 include '../conexion/conection.php';
-include '../assets/include/navbar.php';
+include '../assets/include/navbarJuegos.php';
 
 ?>
 
@@ -115,9 +115,14 @@ include '../assets/include/navbar.php';
     </div>
 </div>  
 
-<script>
-
-</script>
-    
+     <!-- jQuery, Popper.js, Bootstrap JS -->
+     <script src="../assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/core/popper/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+      
+    <!-- datatables JS -->
+    <script type="text/javascript" src="../assets/datatables/datatables.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script type="text/javascript" src="../assets/js/app.js"></script>  
 </body>
 </html>
