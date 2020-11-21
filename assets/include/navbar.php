@@ -28,6 +28,7 @@ $fb_user = $row['fb_user'];
 $tw_user = $row['tw_user'];
 $in_user = $row['in_user'];
 
+$SelcUser = null;
 
 ?>
 
@@ -42,13 +43,13 @@ $in_user = $row['in_user'];
           <span class="button-bar"></span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Inicio</a>
+          <a class="dropdown-item" href="profile-page.php">Inicio</a>
           <a class="dropdown-item" href="#">Publicar</a>
           <a class="dropdown-item" href="list-juegos.php">POST</a>
         </div>
       </div>
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <a class="navbar-brand" href="profile-page.php" rel="tooltip">
           Now Ui Kit
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,19 +61,19 @@ $in_user = $row['in_user'];
       <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="../assets/img/blurred-image-1.jpg">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/<?php echo $tw_user?>" target="_blank">
+            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/<?php echo $tw_user ?>" target="_blank">
               <i class="fab fa-twitter"></i>
               <p class="d-lg-none d-xl-none">Twitter</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/<?php echo $fb_user?>" target="_blank">
+            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/<?php echo $fb_user ?>" target="_blank">
               <i class="fab fa-facebook-square"></i>
               <p class="d-lg-none d-xl-none">Facebook</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/<?php echo $in_user?>" target="_blank">
+            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/<?php echo $in_user ?>" target="_blank">
               <i class="fab fa-instagram"></i>
               <p class="d-lg-none d-xl-none">Instagram</p>
             </a>
@@ -89,6 +90,14 @@ $in_user = $row['in_user'];
               </div>
             </div>
           </li>
+          <form method="GET" action="user.php" class="form-inline ml-auto" data-background-color autocomplete="off">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+              </div>
+              <input type="text" name="nickname_user" class="form-control" placeholder="Usuario">
+            </div>
+          </form>
         </ul>
       </div>
     </div>
